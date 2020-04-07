@@ -6,14 +6,28 @@
 
 // fclose($file);
 
-$file=fopen("compteur.txt", "c");
+$file=fopen("compteur.txt", "c+");
 
-$page=["affichage.html", "accueil.html"];
-
-$max= sizeof($page);
-
-fwrite($file, "Le nombre d affichage de pages est de". $max . "pages");
-
-var_dump(fgets($file));
+fwrite($file,"0");
 
 fclose($file);
+
+$file=fopen("compteur.txt", "c+");
+
+fseek($file,0);
+fwrite($file,"1");
+
+fclose($file);
+
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>Mon compteur de page</title>
+        <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+ <p>Le nombre d affichage de pages est de <?=$file?> </p>
