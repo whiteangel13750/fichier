@@ -28,7 +28,6 @@ foreach($liste as $tab) {
 fputcsv($file, $tab);
 };
 
-var_dump($tab);
 fclose($file);
 
 
