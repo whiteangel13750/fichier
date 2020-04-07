@@ -6,29 +6,13 @@
 
 // fclose($file);
 
-$file=fopen("compteur.txt", "r");
+$file=fopen("compteur.txt", "r++");
 
-var_dump(fgets($file));
+$pages = fgets($file);
+$pages++;
+fseek($file,0);
+fwrite($file, $pages);
 fclose($file);
 
-$file=fopen("compteur.txt", "c");
-
-fwrite($file,"1");
-fclose($file);
-
-$file=fopen("compteur.txt", "r");
-
-var_dump(fgets($file));
-fclose($file);
+echo '<p>Cette page a été vue ' . $pages . ' fois !</p>';
 ?>
-
-<!DOCTYPE html>
-<html lang="fr">
-
-    <head>
-        <title>Mon compteur de page</title>
-        <meta charset="utf-8">
-         <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-
- <p>Le nombre d affichage de pages est de <?=$file?> </p>
