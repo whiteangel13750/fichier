@@ -6,7 +6,7 @@
 
 // fclose($file);
 
-$file=fopen("compteur.txt", "r++");
+$file=fopen("compteur.txt", "r+");
 
 $pages = fgets($file);
 $pages++;
