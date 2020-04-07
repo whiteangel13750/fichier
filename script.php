@@ -24,9 +24,11 @@ array("Jean","6","1","100"));
 
 $file=fopen("index.csv", "w");
 
-fputcsv($file, $liste);
+foreach($liste as $tab) {
+fputcsv($file, $tab);
+};
 
-var_dump($liste);
+var_dump($tab);
 fclose($file);
 
 ?>
