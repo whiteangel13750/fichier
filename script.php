@@ -18,7 +18,8 @@
 // 
 
 $liste=array(array("Rose", "12","2","100"),
-array("Jules","15","1","100");
+array("Jules","15","1","100"),
+array("Jean","6","1","100","Guerrier","0"));
 
 
 $file=fopen("index.csv", "w");
@@ -28,6 +29,5 @@ fputcsv($file, $tab);
 };
 
 fclose($file);
-
 
 ?>
