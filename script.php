@@ -6,19 +6,20 @@
 
 // fclose($file);
 
-$file=fopen("compteur.txt", "c+");
+$file=fopen("compteur.txt", "r");
 
-fwrite($file,"0");
-
+var_dump(fgets($file));
 fclose($file);
 
-$file=fopen("compteur.txt", "c+");
+$file=fopen("compteur.txt", "c");
 
-fseek($file,0);
 fwrite($file,"1");
-
 fclose($file);
 
+$file=fopen("compteur.txt", "r");
+
+var_dump(fgets($file));
+fclose($file);
 ?>
 
 <!DOCTYPE html>
