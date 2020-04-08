@@ -76,6 +76,7 @@
             <div>
             <label> Soumettre le Personnage </label>
             <input type='submit' id='valider' name='valider'>
+        </form>
     </div>
 </section>
     </body>
