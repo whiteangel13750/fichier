@@ -73,6 +73,9 @@
             <label> Niveau du Personnage </label>
             <input type='number' id='force' name='force'>
             </div>
+            <div>
+            <label> Soumettre le Personnage </label>
+            <input type='submit' id='valider' name='valider'>
     </div>
 </section>
     </body>
