@@ -53,6 +53,7 @@
 
 <section class="row bg-light">
     <div class="col-6">
+    <form>
             <div>
             <label> Nom du Personnage </label>
             <input type='text' id='nom' name='nom'>
