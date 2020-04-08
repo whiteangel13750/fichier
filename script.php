@@ -80,11 +80,11 @@ fclose($file);
             </div>
             <div>
             <label> Niveau du Personnage </label>
-            <input type='number' id='force' name='force'>
+            <input type='number' id='niveau' name='niveau'>
             </div>
             <div>
-            <label> Soumettre le Personnage </label>
-            <input type='submit' id='valider' name='valider'>
+            <input type='submit' id='valider' value='Soumettre le personnage'>
+            </div>
         </form>
     </div>
 </section>
