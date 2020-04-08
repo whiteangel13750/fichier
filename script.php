@@ -36,7 +36,15 @@
 
 // fclose($file);
 
-// ---Ex4---
+// ---Ex4 et 5---
+var_dump($_POST);
+
+$file=fopen("index.csv", "a+");
+
+fputcsv($file, $_POST);
+
+fclose($file);
+
 ?>
 
 <!DOCTYPE html>
