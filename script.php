@@ -91,7 +91,7 @@
 //     </body>
 // </html> -->
 
-// ---Ex6---->
+// ---Ex6 et 7---->
 
 if (($file = fopen("index.csv", "r")) !== FALSE) {
     while (($ecriture = fgetcsv($file, 1000, ",")) !== FALSE) {
@@ -105,12 +105,12 @@ if (($file = fopen("index.csv", "r")) !== FALSE) {
 }
 fclose($file);
 
+// ----Ex8--->
+$file=fopen("script.php", "a++");
+$file2=fopen("script.json", "a++");
+json_decode($ecriture, false, 512, 0);
+fwrite($file,file_get_contents("script.json", FALSE));
+fclose($file2);
+fclose($file);
 
-
-    
-
-
-
-
-
-
+["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]["Rose","12","2","100"]["Jules","15","1","100"]["Jean","6","1","100","Guerrier","0"]["McAllister","Ulrick","4","1"]["Filiphi","Felicia","6","2"]["McAllister","John","5","5","6"]
