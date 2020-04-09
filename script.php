@@ -96,15 +96,10 @@
 if (($file = fopen("index.csv", "r")) !== FALSE) {
     while (($ecriture = fgetcsv($file, 1000, ",")) !== FALSE) {
         $size = sizeof($ecriture);
-        $tab="";
-        
-        for ($c=0; $c < $size; $c++) {
-            $tab.=$ecriture[$c].PHP_EOL;
-            
-        }
-        var_dump($tab);
+
+        var_dump($ecriture);
         $file2=fopen("script.json", "a++");
-        fwrite($file2,json_encode($tab));
+        fwrite($file2,json_encode($ecriture));
         fclose($file2);    
     }
 }
