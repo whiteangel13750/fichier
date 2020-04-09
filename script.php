@@ -99,16 +99,14 @@ if (($file = fopen("index.csv", "r")) !== FALSE) {
         $tab="";
         
         for ($c=0; $c < $size; $c++) {
-            $tab.="<div>".$ecriture[$c]."</div>" . "<br/>\n";
+            $tab.=$ecriture[$c].PHP_EOL;
             
         }
         var_dump($tab);
         $file2=fopen("script.json", "a++");
         fwrite($file2,json_encode($tab));
-        fclose($file2);
-    
+        fclose($file2);    
     }
-
 }
 fclose($file);
 
